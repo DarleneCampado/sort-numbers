@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<script> 
+function sort(){
+    var nums = document.getElementById("val").value;
+    var array = nums.split(",");
+    array.sort(function(a, b)
+    { return b - a;	});
+    alert("Highest to lowest: \n" + array);
+}
+</script>
+<head>
+</head>
+<body>
+<p>Sort from Highest to Lowest</p>
+<p></p>
+Please input comma-separated-values:<br> <input id="val"> <br>
+<button onclick="sort()">Sort</button>
+</body>
+</html>
